@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOMK.RAR | Vlog & Música</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Iconos Lucide / FontAwesome para estética -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Encabezado / Nav -->
+  <header class="navbar">
+    <div class="logo">tomk<span>.rar</span></div>
+    <nav>
+      <a href="#vlog" class="nav-link active"><i class="fa-solid fa-user"></i> Sobre Mí</a>
+      <a href="#musica" class="nav-link"><i class="fa-solid fa-compact-disc"></i> Colección</a>
+    </nav>
+  </header>
+
+  <!-- Hero / Sección Vlog (Sobre Mí) -->
+  <section id="vlog" class="section hero-section">
+    <div class="hero-card">
+      <div class="profile-avatar">
+        <div class="avatar-inner">
+          <i class="fa-solid fa-wave-square"></i>
+        </div>
+      </div>
+      <h1 class="glitch-text">TOMK<span>.RAR</span></h1>
+      <p class="bio-subtitle">Explorador sonoro • Curador de portadas & música</p>
+      <p class="bio-desc">
+        Bienvenido a mi espacio personal en esencia. Aquí archivo mis descubrimientos musicales, álbumes favoritos y material gráfico. Un vlog sobre lo que escucho y comparto.
+      </p>
+
+      <!-- Mis Redes Sociales -->
+      <div class="social-links">
+        <a href="https://open.spotify.com/user/316sfcphe6vxagrhnl3q54ixhnca?si=356439348df34840" target="_blank" class="social-btn spotify">
+          <i class="fa-brands fa-spotify"></i> Spotify Profile
+        </a>
+        <a href="https://www.instagram.com/tomk.rar?stkn=MWFuZzJsd3pjam8zaw==" target="_blank" class="social-btn instagram">
+          <i class="fa-brands fa-instagram"></i> @tomk.rar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Colección y Búsqueda -->
+  <section id="musica" class="section music-section">
+    <div class="section-header">
+      <h2>Colección Musical</h2>
+      <p>Explorá artistas, álbumes y canciones; escuchá previews y abrí tus favoritos en Spotify.</p>
+    </div>
+
+    <!-- Barra de Búsqueda -->
+    <div class="search-container">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Buscar artista, álbum o canción...">
+      <button id="clearSearch" class="clear-btn">&times;</button>
+    </div>
+
+    <!-- Contador de Resultados -->
+    <div id="resultsCount" class="results-count">Cargando álbumes...</div>
+
+    <!-- Grid de Álbumes Groupados -->
+    <div id="albumsGrid" class="albums-grid"></div>
+  </section>
+
+  <!-- Modal para ver portada en alta definición -->
+  <div id="imageModal" class="modal">
+    <span class="close-modal" id="closeModal">&times;</span>
+    <div class="modal-content">
+      <img id="modalImg" src="" alt="Portada en grande">
+      <div class="modal-info">
+        <h3 id="modalTitle">Título del Álbum</h3>
+        <p id="modalArtist">Artista</p>
+        <a id="downloadBtn" class="download-btn" href="#" target="_blank" download="portada.jpg">
+          <i class="fa-solid fa-download"></i> Descargar Imagen
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 TOMK.RAR — Desarrollado para GitHub Pages</p>
+  </footer>
+
+  <!-- Archivo de Datos y Script Principal -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
